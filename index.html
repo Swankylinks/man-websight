@@ -5,165 +5,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samuel Apreku | Resume</title>
+  <title>Resume | Samuel Apreku</title>
   <script src="https://unpkg.com/feather-icons"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .profile {
-      text-align: center;
-      padding: 30px 15px;
-      background: #0077b6;
-      color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .profile img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-    }
-
-    .profile_name {
-      margin-top: 15px;
-      font-size: 2rem;
-    }
-
-    .profile_title {
-      font-size: 1.2rem;
-      margin: 10px 0;
-      font-weight: 700;
-      color: #00d4ff;
-    }
-
-    .profile_description {
-      margin: 15px 0;
-      line-height: 1.5;
-    }
-
-    .downloadBtn {
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #00b4d8;
-      color: white;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-
-    .downloadBtn:hover {
-      background: #0077b6;
-    }
-
-    .group-1, .group-2, .group-3 {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #0077b6;
-      margin-bottom: 10px;
-    }
-
-    .skills, .ref, .edu, .certification, .exp, .awards, .interest, .contact, .social {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .skills_list li {
-      margin: 5px 0;
-    }
-
-    .description {
-      font-size: 0.9rem;
-    }
-
-    .interest_items {
-      display: flex;
-      gap: 15px;
-    }
-
-    .interest_item {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      padding: 10px;
-      background: #f0f8ff;
-      border-radius: 5px;
-    }
-
-    .social_items a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #333;
-      gap: 10px;
-      padding: 10px;
-      background: #f9f9f9;
-      border: 1px solid #eee;
-      border-radius: 5px;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-
-    .social_items a:hover {
-      transform: translateY(-3px);
-      background: #00d4ff;
-      color: white;
-    }
-
-    @media (max-width: 768px) {
-      .group-1, .group-2, .group-3 {
-        flex-direction: column;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <div class="container">
     <!-- Profile Section -->
     <div class="profile">
-      <img src="./images/img5.png" alt="Profile Image">
-      <h1 class="profile_name">Samuel <span>Apreku</span></h1>
-      <p class="profile_title">Network Administrator</p>
-      <p class="profile_description">
-        Expert Computer Scientist with experience in networking, programming, database management, and research in
-        digital currency. Committed to solving complex challenges with innovative solutions and technical expertise.
-        Currently pursuing a B.Sc. in Computer Science at the University of Cape Coast.
-      </p>
-      <a class="downloadBtn" href="./cv.pdf" download="Resume.pdf">Download Resume</a>
+      <div class="profile_container">
+        <div class="profile_profileImg">
+          <img src="./images/img5.png" alt="Samuel Apreku">
+        </div>
+        <div>
+          <h1 class="profile_name">
+            <span class="profile_name_firstName">Samuel</span>
+            <span class="profile_name_lastName">Apreku</span>
+          </h1>
+          <p class="profile_title">Network Administrator</p>
+          <p class="description profile_description">
+            Expert Computer Scientist with diverse work experience, including computer networking, programming,
+            database administration, and research in digital currency. Dedicated to meeting customer requirements
+            with innovative targets. Consistently uses in-depth knowledge to solve problems. Currently pursuing a
+            B.Sc. in Computer Science at the University of Cape Coast.
+          </p>
+          <a class="downloadBtn" href="./cv.pdf" download="Resume.pdf">Download Resume</a>
+        </div>
+      </div>
     </div>
 
     <!-- Group 1 -->
     <div class="group-1">
       <div class="skills">
-        <h3 class="title">Skills</h3>
+        <h3 class="title">Expertise</h3>
         <ul class="skills_list description">
           <li>Networking</li>
           <li>Database Management</li>
@@ -172,12 +48,33 @@
           <li>Web Development</li>
         </ul>
       </div>
+      <div class="ref">
+        <h3 class="title">Reference</h3>
+        <div class="ref_item">
+          <h4 class="ref_name">sam.ltd</h4>
+          <p class="description">A company, located in Accra</p>
+        </div>
+        <div class="ref_item">
+          <h4 class="ref_name">Devide Dela</h4>
+          <p class="description">The manager of the company during the year 2022</p>
+        </div>
+      </div>
       <div class="edu">
         <h3 class="title">Education</h3>
         <div class="edu_item">
-          <p>2021 - Current</p>
-          <h4>B.Sc. Computer Science</h4>
-          <p>University of Cape Coast</p>
+          <p class="item_preTitle">2021- Current</p>
+          <h4 class="item_title">B.Sc. Computer Science</h4>
+          <p class="item_subtitle">University of Cape Coast</p>
+        </div>
+      </div>
+      <div class="certification">
+        <h3 class="title">Certifications</h3>
+        <div class="certification_item">
+          <p class="item_preTitle">2021</p>
+          <h4 class="item_title">Networking and Programming</h4>
+          <p class="description">
+            Studied computer networking and programming, and gained certification during the early days of 2023.
+          </p>
         </div>
       </div>
     </div>
@@ -187,26 +84,76 @@
       <div class="exp">
         <h3 class="title">Experience</h3>
         <div class="exp_item">
-          <p>2022 - Present</p>
-          <h4>Research in Digital Currency</h4>
-          <p>Crypto Enthusiast</p>
-          <p>Conducted research on the evolution of cryptocurrencies and blockchain technologies.</p>
+          <p class="item_preTitle">2022 - Present</p>
+          <h4 class="item_title">Research in Digital Currency</h4>
+          <p class="item_subtitle">Crypto Enthusiast</p>
+          <p class="description">
+            Conducted many researches in the evolution of cryptocurrencies and the future of fiat and digital currency
+            based on blockchain technology.
+          </p>
+        </div>
+      </div>
+      <div class="awards">
+        <h3 class="title">Awards</h3>
+        <div class="awards_item">
+          <p class="item_preTitle">2022</p>
+          <h4 class="item_title">Networking Competition</h4>
+          <p class="description">
+            Participated in a networking competition at the University of Cape Coast and received an award for the best
+            and most secure network setup.
+          </p>
+        </div>
+      </div>
+      <div class="interest">
+        <h3 class="title">Interests</h3>
+        <div class="interest_items">
+          <div class="interest_item">
+            <i data-feather="music"></i>
+            <span>Music</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="book"></i>
+            <span>Books</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="map"></i>
+            <span>Travel</span>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Contact -->
+    <!-- Group 3 -->
     <div class="group-3">
       <div class="contact">
         <h3 class="title">Contact</h3>
-        <p>Accra, Lapaz</p>
-        <p>+233 0543718602</p>
-        <p>samuel.apreku@stu.ucc.edu.gh</p>
+        <div class="contact_info">
+          <p class="description">Accra, Lapaz</p>
+          <p class="description">+233 0543718602</p>
+          <p class="description">samuel.apreku@stu.ucc.edu.gh</p>
+        </div>
+      </div>
+      <div class="social">
+        <h3 class="title">Socials</h3>
+        <div class="social_items">
+          <a href="#" target="_blank" class="social_item">
+            <i data-feather="github"></i>
+            <span>Lil_Enzo_365</span>
+          </a>
+          <a href="#" target="_blank" class="social_item">
+            <i data-feather="twitter"></i>
+            <span>@Lil_Enzo_365</span>
+          </a>
+          <a href="#" target="_blank" class="social_item">
+            <i data-feather="linkedin"></i>
+            <span>Swanky Links</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
   <script>
-    feather.replace()
+    feather.replace();
   </script>
 </body>
 
