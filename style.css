@@ -1,50 +1,130 @@
+/* General Reset */
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
   color: #333;
 }
 
+h1, h2, h3 {
+  margin: 0;
+  color: #0077b6;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.profile {
-  text-align: center;
-  padding: 30px 15px;
-  background: #0077b6;
+/* Header Section */
+.header {
+  background-color: #0077b6;
   color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-.profile img {
+.profile-image img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  margin-bottom: 20px;
   border: 5px solid #fff;
 }
 
-.profile_name {
-  margin-top: 15px;
+.profile-details h1 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
-.profile_title {
+.role {
   font-size: 1.2rem;
   margin: 10px 0;
-  font-weight: 700;
-  color: #00d4ff;
+  color: #ffdd57;
 }
 
-.group-1, .group-2, .group-3 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.download-btn {
+  display: inline-block;
+  background-color: #ffdd57;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
   margin-top: 20px;
+  transition: background 0.3s;
 }
 
-/* Add remaining styles for layout, buttons, lists, and responsive design */
+.download-btn:hover {
+  background-color: #ffcc33;
+}
+
+/* Main Content */
+.content {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0077b6;
+  display: inline-block;
+}
+
+.skills li, .reference, .education, .certification, .experience, .award, .interests span, .contact-section p {
+  margin-bottom: 10px;
+}
+
+.skills li {
+  list-style: none;
+  padding: 5px;
+  background: #0077b6;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.interests span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background: #e1e5f2;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.interests span i {
+  color: #0077b6;
+}
+
+.social-section a {
+  display: block;
+  text-decoration: none;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.social-section a i {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header, .content {
+    padding: 20px;
+  }
+
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+  }
+}
